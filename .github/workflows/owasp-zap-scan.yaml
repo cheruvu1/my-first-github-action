@@ -9,8 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: master
+        with:           
           lfs: true 
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
